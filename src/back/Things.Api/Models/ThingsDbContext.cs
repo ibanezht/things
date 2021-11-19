@@ -15,7 +15,7 @@ namespace Things.Api.Models
         {
             #region seed db data
 
-            var units = new[]
+            var things = new[]
             {
                 new Thing
                 {
@@ -29,7 +29,7 @@ namespace Things.Api.Models
 
             #endregion
 
-            modelBuilder.Entity<Thing>().HasData(units);
+            modelBuilder.Entity<Thing>().HasData(things);
 
             base.OnModelCreating(modelBuilder);
         }
