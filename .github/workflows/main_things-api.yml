@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'things-api'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_88F81D0FD2D54E0C8023DBC996C47ACC }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5A7EA20CF5544DBAB59681FC2651BD7F }}
           package: .
