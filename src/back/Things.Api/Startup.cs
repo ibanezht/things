@@ -20,7 +20,7 @@ namespace Things.Api
 
             services.AddSwaggerGen(options =>
             {
-                options.SwaggerDoc("v1", new OpenApiInfo { Title = "eqscan.api", Version = "v1" });
+                options.SwaggerDoc("v1", new OpenApiInfo { Title = "things.api", Version = "v1" });
             });
         }
 
@@ -33,7 +33,7 @@ namespace Things.Api
             app.UseEndpoints(builder => { builder.MapControllers(); });
 
             app.UseSwagger();
-            app.UseSwaggerUI(options => options.SwaggerEndpoint("/swagger/v1/swagger.json", "eqscan.api v1"));
+            app.UseSwaggerUI(options => options.SwaggerEndpoint("/swagger/v1/swagger.json", "things.api v1"));
         }
 
         private static string GetConnectionString()
@@ -43,7 +43,7 @@ namespace Things.Api
                 UserID = "sa",
                 Password = "P@ssw0rd",
                 DataSource = ".",
-                InitialCatalog = "eqscan"
+                InitialCatalog = "things"
             };
             var retval = builder.ToString();
             return retval;
